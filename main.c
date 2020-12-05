@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include<time.h>
 #include <stdio.h>
 #include "rombo.c"
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -6,10 +7,10 @@
 int main(){
     int tamano=0,c;
     
-    do{
-        printf("Ingrese el un valor (1-n) ");
+    //do{
+        printf("Ingrese el un valor (3-n) ");
         scanf("%d",&tamano);
-        if(tamano>=1){
+        if(tamano>=3){
             hola(tamano);
         }else
         {
@@ -19,6 +20,6 @@ int main(){
             while (getchar() != '\n' );  
             system("clear");
         }
-    }while(tamano<1);
+    //}while(tamano<3);
     return 0;
 }
