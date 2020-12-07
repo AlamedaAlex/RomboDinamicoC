@@ -24,15 +24,13 @@ void hola(int x){
                 printf("**");
                 M1=+2;
                 izq++;
-            }else if(j<M){
-                printf("-");
             }else if(j>=M1 && izq<i){
                 printf("*");
                 izq++;
             }else{
                 printf("-");
             }
-            sleep(1);
+            //sleep(1);
         }
         M1=M;
         izq=0;
