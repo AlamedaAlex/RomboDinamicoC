@@ -12,7 +12,7 @@ void hola(int x){
     M=(x%2)+(x/2);
     M1=M;
     //printf("%d\n",fila);printf("%d\n",columna);printf("%d\n",M);printf("%d\n",M1);
-    for(i=1;i<=(fila/2);i++){
+    for(i=1;i<=fila;i++){
         //printf("fila: %d",i);
         for(j=1;j<=columna;j++){
             //printf("\n\tM1/C: %d, %d",M1,j);
@@ -27,6 +27,8 @@ void hola(int x){
             }else if(j>=M1 && izq<i){
                 printf("*");
                 izq++;
+            }else if(i==M){
+                printf("*");
             }else{
                 printf("-");
             }
